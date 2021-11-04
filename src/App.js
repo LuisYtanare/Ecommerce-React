@@ -1,15 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Home from './pages/Home';
 
-import React from 'react'
-
-export const App = () => {
+function App() {
   return (
-    <div>
-      <h1>HElooooooo!</h1>
-    </div>
+    <>
+      <Home/>
+    </>
   )
 }
-
 
 export default App;
