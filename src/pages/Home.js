@@ -2,14 +2,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel";
 import Layout from "../components/Layout";
-import itemListContainer from "../container/ItemListContainer";
+import ItemListContainer from "../components/ItemListContainer";
 
 const Home = () => {
     return ( 
      <>
         <Navbar/>
-        <Carousel/>
-        <itemListContainer/>
+        <ItemListContainer titulo="Ve aqui los mejores productos"/>
 
         <Layout>
             <div>
@@ -19,6 +18,7 @@ const Home = () => {
 
             </div>
         </Layout>
+        <Carousel/>
      </>
   )                   
 }
