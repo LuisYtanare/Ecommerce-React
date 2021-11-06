@@ -21,7 +21,7 @@ const data = [
 
     {
         id:'3',
-        nombren:'Control PS4',
+        nombre:'Control PS4',
         desc:'FXH Reemplazo para controlador PS4, controlador inalámbrico doble vibración juego Joystick controlador para PS4/Slim/Pro, compatible con consola PS4',
         precio:'120',
         categoria:'consolas',
@@ -36,7 +36,7 @@ const data = [
         precio:'270',
         categoria:'consolas',
         stock:'7',
-        image:'/public/image/swith.jpg',
+        imagen:'/public/image/swith.jpg',
     },
 
 ]

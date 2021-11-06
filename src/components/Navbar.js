@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/img/Logo.png'
 import CartWidget from './CartWidget'
+import { NavLink, link } from 'react-router-dom'
 
 
 export const Navbar = () => {
@@ -17,9 +18,9 @@ export const Navbar = () => {
                 </button>
                  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div className="navbar-nav">
-                    <a className="nav-link" href="#">acerca de la tienda</a>
-                    <a className="nav-link" href="#">Productos</a>
-                    <a className="nav-link" href="#">Contactanos</a>
+                    <Navlink className="nav-link" to="#">acerca de la tienda</Navlink>
+                    <Navlink className="nav-link" to="#">Productos</Navlink>
+                    <Navlink className="nav-link" to="#">Contactanos</Navlink>
                 </div>
               </div>
             </div>

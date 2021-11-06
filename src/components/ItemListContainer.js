@@ -16,7 +16,7 @@ const ItemListContainer = (props) =>{
             setProductos(data)
             setCargando(false)
         })
-    },{}) 
+    },{})
 
     return (
         <div className="containers">
