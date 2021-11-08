@@ -1,8 +1,4 @@
 import React from 'react'
-import Slider from '../assets/img/slider1.jpg'
-import Slider2 from '../assets/img/slider2.jpg'
-import Slider3 from '../assets/img/slider3.jpg'
-
 
 export const Carousel = () =>{
     return (
@@ -16,7 +12,7 @@ export const Carousel = () =>{
               <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                  <img src={Slider} class="d-block w-100" alt="Imagen computador gamers"/>
+                  <img src="/image/carousel/slider1.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
                   <div class="carousel-caption d-none d-md-block">
                      <h5>Third slide label</h5>
                      <p>Some representative placeholder content for the third slide.</p>
@@ -24,7 +20,7 @@ export const Carousel = () =>{
                 </div>
 
                 <div class="carousel-item">
-                  <img src={Slider2} class="d-block w-100" alt="Imagen computador gamers"/>
+                  <img src="/image/carousel/slider1.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
                   <div class="carousel-caption d-none d-md-block">
                      <h5>Third slide label</h5>
                      <p>Some representative placeholder content for the third slide.</p>
@@ -32,7 +28,7 @@ export const Carousel = () =>{
                </div>
 
                <div class="carousel-item">
-                  <img src={Slider3} class="d-block w-100" alt="Imagen computador gamers"/>
+                  <img src="/image/carousel/slider1.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
                    <div class="carousel-caption d-none d-md-block">
                      <h5>Third slide label</h5>
                      <p>Some representative placeholder content for the third slide.</p>
