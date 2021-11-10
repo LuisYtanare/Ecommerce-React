@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import data  from '../../../data/data';
 import ItemList from './ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import Item from './ItemList/Item/Item';
+
 
 const ItemListContainer = (props) => {
 
@@ -12,19 +14,23 @@ const ItemListContainer = (props) => {
     const [productos, setProductos] = useState([])
     const [cargando, setCargando] = useState(true)
 
-    console.log(useParams())
+    const {categoryId} = useParams()
 
-    useEffect(()=>{
+        useEffect(() =>{
+        setCargando(true)
         const listaDeProductos=new Promise((res, rej)=>{
             setTimeout(()=>{
                 res(data)
-            },2000)
+            },1000)
         })
         listaDeProductos.then((data)=>{
+            categoryId 
+            ? setProductos(data.filter((i) => i.category === categoryId)) 
+            :
             setProductos(data)
             setCargando(false)
         })
-    },[])
+    },[categoryId])
 
     return (
         <>

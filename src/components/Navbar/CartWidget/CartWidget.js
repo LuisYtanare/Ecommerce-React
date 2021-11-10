@@ -3,9 +3,7 @@ import React from 'react'
 const CartWidget = (props) => {
     return (
         <div>
-            {/* <img src="/image/ShopingCart.png"/> */}
-            <p>{props.cart}</p>
-
+            <img src="/image/ShopingCart.png"/>
         </div>
     )
 }
