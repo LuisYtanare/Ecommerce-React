@@ -10,10 +10,10 @@ const Navbar = () => {
                 <CartWidget cart={'Logo'}/>
             </div>
 
-            <div className="navbar-menu">
-                <p>opcion 1</p>
-                <p>Opcion 2</p>
-                <p>Opcion 3</p>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">Componentes para PC</a>
+                <a class="nav-link" href="#">Componentes para consolas</a>
+                <a class="nav-link" href="#">Accesorios de telefonos</a>
             </div>
 
             
