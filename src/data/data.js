@@ -1,6 +1,6 @@
 const data = [
     {
-        id:'1',
+        id: '1',
         nombre:'Mouse Gaming HP',
         desc:'Ratón HP con cable RGB Gaming Mouse de alto rendimiento',
         precio:'80$',
