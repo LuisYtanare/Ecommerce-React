@@ -14,24 +14,24 @@ export const Carousel = () =>{
                 <div class="carousel-item active">
                   <img src="/image/carousel/slider1.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
                   <div class="carousel-caption d-none d-md-block">
-                     <h5>Third slide label</h5>
-                     <p>Some representative placeholder content for the third slide.</p>
+                     <h5>Lo Mejor en computadores</h5>
+                     <p>Aqui encontraras una gran variedad de productos a tu freferencia</p>
                   </div>
                 </div>
 
                 <div class="carousel-item">
                   <img src="/image/carousel/slider1.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
                   <div class="carousel-caption d-none d-md-block">
-                     <h5>Third slide label</h5>
-                     <p>Some representative placeholder content for the third slide.</p>
+                     <h5>Productos de consolas</h5>
+                     <p>Con los mejores accesorios y controles personaliazdos que tanto deseas</p>
                   </div>
                </div>
 
                <div class="carousel-item">
                   <img src="/image/carousel/slider1.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
                    <div class="carousel-caption d-none d-md-block">
-                     <h5>Third slide label</h5>
-                     <p>Some representative placeholder content for the third slide.</p>
+                     <h5>Con los mejores accesorios</h5>
+                     <p>Si eres jugador de Smartphone no hay problema aqui estan los mejores case adaptables</p>
                   </div>
                </div>
 
