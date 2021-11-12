@@ -26,7 +26,11 @@ export const ItemDetailContainer= () => {
         })
     },[])
 
-    return cargando ? <img src="/image/cargando.gif" height="48px" /> : <ItemDetail producto={producto}/>
+    return (
+        <div className="princ2">
+        {cargando ? <img src="/image/cargando.gif" height="48px" /> : <ItemDetail producto={producto}/>}
+        </div>
+    )
 }
         
     // fin 1
