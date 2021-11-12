@@ -1,15 +1,14 @@
 import React from "react";
 
-export const ItemDetail =({id, nombre, precio , imagen, desc})=>{
 
-    return !id ? (
-      <h1>Producto no disponible</h1>
-    ) : (
+export const ItemDetail =({producto})=>{
+
+    return (
       <>
-        <h1>{nombre}</h1>
-        <img src={imagen} alt={nombre}/>
-        <p>{precio}</p> 
-        <p>{desc}</p>
+        <h1>{producto.nombre}</h1>
+        <img src={producto.imagen} alt={producto.nombre}/>
+        <p>{producto.precio}</p> 
+        <p>{producto.desc}</p>
       </>
     )
 }

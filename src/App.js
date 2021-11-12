@@ -22,7 +22,7 @@ function App() {
             <ItemListContainer titulo={'Venta de equipos'}/>
            </Route>
 
-           <Route exact="/item/:id">
+           <Route exact path="/item/:id">
              <ItemDetailContainer/>
            </Route>
 

@@ -8,6 +8,7 @@ export const ItemDetailContainer= () => {
     // parte 1
 
     const [producto, setProducto] = useState({})
+    const [cargando, setCargando] =useState(true)
     const {id} = useParams()
 
         useEffect(() =>{
@@ -17,11 +18,15 @@ export const ItemDetailContainer= () => {
             },1000)
         })
         listaDeProductos.then((res)=>{
+            console.log(res)
+            console.log(id)
             setProducto(res.find((i) => i.id === id));
+            setCargando(false)
+            console.log(producto)
         })
-    },[id])
+    },[])
 
-    return <ItemDetail producto={producto}/>
+    return cargando ? <img src="/image/cargando.gif" height="48px" /> : <ItemDetail producto={producto}/>
 }
         
     // fin 1
