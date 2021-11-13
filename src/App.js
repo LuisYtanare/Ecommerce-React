@@ -1,17 +1,18 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/Navbar/ItemListContainer/ItemListContainer';
 import Carousel from './components/Carousel/Carousel';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import CartWidget from './components/Navbar/CartWidget/CartWidget';
+import { CartFuncion } from './components/CartContext';
+import {Cart} from './components/Cart';
 
 
 function App() {
   return (
     <BrowserRouter>
-
+    <CartFuncion>
          <Navbar/> 
 
          <Switch>
@@ -23,8 +24,8 @@ function App() {
             <ItemListContainer titulo={'Venta de equipos'}/>
            </Route>
 
-           <Route exact path="/CartShoping">
-             <p>Carrito de compras</p>
+           <Route exact path="/cart">
+             <Cart/>
            </Route>
 
            <Route exact path="/item/:id">
@@ -39,7 +40,7 @@ function App() {
          </Switch>
 
          <Carousel/> 
-
+    </CartFuncion>
     </BrowserRouter>
   )
 }

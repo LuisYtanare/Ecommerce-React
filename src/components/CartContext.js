@@ -1,17 +1,33 @@
- import react, { useState } from "react";
+import react, { useState } from "react";
 
- const Context = react.CartContext()
+const Context = react.createContext()
 
- const CartFuncion = ({chlindren}) => {
-     const [cart, setCart] = useState({})
-     const [unidades, setUnidades] = useState(0)
-     const [total, setTotal] =useState(0)
+const CartFuncion = ({chlindren}) => {
+    const [cart, setCart] = useState({})
+    const [unidades, setUnidades] = useState(0)
+    const [total, setTotal] =useState(0)
 
+    const onAdd = (producto, cantidad)=>{
+        const itemExiste=cart.find(item=>item.id===producto.id)
+        if (!itemExiste) {
+            setCart([...cart, {id:producto.id, nombre:producto.nombre, precio:producto.precio, cantidad:cantidad, subTotal:(producto.precio*cantidad)}])
+            setTotal(total+(producto.precio*cantidad))
+        } else {
+            const cartAux=cart.map((item)=>{
+                if (item.id===producto.id){
+                    item.cantidad+=cantidad
+                    item.subTotal+=(producto.precio*cantidad)
+                } 
+                return item  
+            })
+            setCart(cartAux)
+            setTotal(total+(producto.precio*cantidad))
+        }
+    }
 
+    return <Context.Provider value={{cart, unidades, total, onAdd}}>
+    (chlindren)
+    </Context.Provider>
+}
 
-     return <Context.Provider value={{cart, unidades, total}}>
-     {chlindren}
-     </Context.Provider>
- }
-
- export {CartFuncion, Context}
+export {CartFuncion, Context}
