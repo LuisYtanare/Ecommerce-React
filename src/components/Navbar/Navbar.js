@@ -9,7 +9,8 @@ const Navbar = () => {
             <div className="navbar-img">
                 <Link class="nav-link" to="/"><img src="/image/Logo.png"/></Link>
                 <Link class="nav-link" to="/"><h1>Gameshops</h1></Link>
-                <CartWidget/>
+                <Link class="nav-link" to="/CartShoping"><img src="/image/ShopingCart.png"/></Link>
+                
             </div>
 
             <div class="navbar-nav">
@@ -17,8 +18,6 @@ const Navbar = () => {
                 <Link class="nav-link" to="/category/consola">Componentes para consolas</Link>
                 <Link class="nav-link" to="/category/accesorio">Accesorios de telefonos</Link>
             </div>
-
-            
         </div>
     )
 }

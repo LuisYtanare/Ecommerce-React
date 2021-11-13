@@ -20,7 +20,7 @@ export const Carousel = () =>{
                 </div>
 
                 <div class="carousel-item">
-                  <img src="/image/carousel/slider1.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
+                  <img src="/image/carousel/slider2.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
                   <div class="carousel-caption d-none d-md-block">
                      <h5>Productos de consolas</h5>
                      <p>Con los mejores accesorios y controles personaliazdos que tanto deseas</p>
@@ -28,7 +28,7 @@ export const Carousel = () =>{
                </div>
 
                <div class="carousel-item">
-                  <img src="/image/carousel/slider1.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
+                  <img src="/image/carousel/slider3.jpg" class="d-block w-100" alt="Imagen computador gamers"/>
                    <div class="carousel-caption d-none d-md-block">
                      <h5>Con los mejores accesorios</h5>
                      <p>Si eres jugador de Smartphone no hay problema aqui estan los mejores case adaptables</p>

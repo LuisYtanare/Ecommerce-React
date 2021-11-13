@@ -5,6 +5,7 @@ import ItemListContainer from './components/Navbar/ItemListContainer/ItemListCon
 import Carousel from './components/Carousel/Carousel';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import CartWidget from './components/Navbar/CartWidget/CartWidget';
 
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
 
            <Route exact path="/category/:categoryId">
             <ItemListContainer titulo={'Venta de equipos'}/>
+           </Route>
+
+           <Route exact path="/CartShoping">
+             <p>Carrito de compras</p>
            </Route>
 
            <Route exact path="/item/:id">
