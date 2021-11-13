@@ -1,4 +1,4 @@
-import react, {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import { ItemDetail } from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import data from "../data/data";
@@ -28,7 +28,7 @@ export const ItemDetailContainer= () => {
 
     return (
         <div className="princ2">
-        {cargando ? <img src="/image/cargando.gif" height="48px" /> : <ItemDetail producto={producto}/>}
+        {cargando ? <img src="/image/cargando.gif" height="48px" /> : <ItemDetail {...producto}/>}
         </div>
     )
 }

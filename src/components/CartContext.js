@@ -1,8 +1,8 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 
-const Context = react.createContext()
+const Context = React.createContext()
 
-const CartFuncion = ({chlindren}) => {
+const CartFuncion = ({children}) => {
     const [cart, setCart] = useState({})
     const [unidades, setUnidades] = useState(0)
     const [total, setTotal] =useState(0)
@@ -26,7 +26,7 @@ const CartFuncion = ({chlindren}) => {
     }
 
     return <Context.Provider value={{cart, unidades, total, onAdd}}>
-    (chlindren)
+    {children}
     </Context.Provider>
 }
 

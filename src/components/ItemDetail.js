@@ -3,7 +3,7 @@ import React, {useContext, useState} from "react";
 import { Link } from "react-router-dom";
 import { Context } from "./CartContext";
 
-export const ItemDetail =({producto})=>{
+export const ItemDetail =({id, nombre, precio, desc, stock, imagen})=>{
   
      const[buy, setBuy] = useState(false)
      const {onAdd} = useContext(Context)
@@ -18,12 +18,12 @@ export const ItemDetail =({producto})=>{
     return (
       <>
        <div className="card text-dark bg-info mb-3">
-          <img src={producto.imagen} className="card-img-top" alt={producto.nombre}/>
+          <img src={imagen} className="card-img-top" alt={nombre}/>
             <div className="card-body" >
-              <h5 className="card-title">{producto.nombre}</h5>
-              <p className="card-text">{producto.precio}</p> 
-              <p className="card-text">{producto.desc}</p>
-              {!buy ? <ItemCount stock={producto.stock} onAdd={agregar}/> : <Link to='/cart'><button className="btn btn-outline-success">Terminar compra</button></Link>}
+              <h5 className="card-title">{nombre}</h5>
+              <p className="card-text">{precio}</p> 
+              <p className="card-text">{desc}</p>
+              {!buy ? <ItemCount stock={stock} onAdd={agregar}/> : <Link to='/cart'><button className="btn btn-outline-success">Terminar compra</button></Link>}
             </div>
         </div>
       </>

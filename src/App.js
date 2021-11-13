@@ -12,7 +12,7 @@ import {Cart} from './components/Cart';
 function App() {
   return (
     <BrowserRouter>
-    <CartFuncion>
+     <CartFuncion>
          <Navbar/> 
 
          <Switch>
@@ -40,7 +40,7 @@ function App() {
          </Switch>
 
          <Carousel/> 
-    </CartFuncion>
+     </CartFuncion>
     </BrowserRouter>
   )
 }
