@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Context = React.createContext()
 
 const CartFuncion = ({children}) => {
-    const [cart, setCart] = useState({})
+    const [cart, setCart] = useState([])
     const [unidades, setUnidades] = useState(0)
     const [total, setTotal] =useState(0)
 

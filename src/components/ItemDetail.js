@@ -21,7 +21,7 @@ export const ItemDetail =({id, nombre, precio, desc, stock, imagen})=>{
           <img src={imagen} className="card-img-top" alt={nombre}/>
             <div className="card-body" >
               <h5 className="card-title">{nombre}</h5>
-              <p className="card-text">{precio}</p> 
+              <p className="card-text">{precio} $ </p> 
               <p className="card-text">{desc}</p>
               {!buy ? <ItemCount stock={stock} onAdd={agregar}/> : <Link to='/cart'><button className="btn btn-outline-success">Terminar compra</button></Link>}
             </div>
