@@ -1,6 +1,4 @@
-# Proyecto de Coderhouse [ Sincronizar Couting]
-
-
+# Proyecto de Coderhouse [ Cart View | Item Collector ]
 
 # Gaming shop-Coderhouse
 
