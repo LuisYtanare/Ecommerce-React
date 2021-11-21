@@ -9,8 +9,8 @@ const Home= ({greeting}) => {
         <section className="home">
             <div>
             <h1>{greeting}</h1>
-            <span>¡Bienveno a nuestra tienda!</span>
-            <span>A continuación todos nuestros productos</span>
+            <span>¡Nos alegra verte de nuevo!</span>
+            <span>encontraras los mejores productos para el gaming aqui!</span>
             </div>
             <ItemListContainer/>
         </section>

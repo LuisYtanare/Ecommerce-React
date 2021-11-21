@@ -14,6 +14,9 @@
         padding: 10px 0px ;
         border-bottom: 1.5px solid #BBADA0;
         margin-bottom: 15px;
+        .validation{
+            color: #25d366;
+        }
         .continue{
             border: none;
             background: #0B1D51;
@@ -97,12 +100,20 @@
                     content: 'COP $';
                 }
             }
-            
         }
         .t-price{
             color: #0B1D51;
             font-weight: bold;
         }
-        
+        .checkout{
+            float: right;
+            border: none;
+            background: #797596;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 10px;
+            font-family: 'Bellota', cursive;
+            padding: 10px;
+        }
     }
 }
