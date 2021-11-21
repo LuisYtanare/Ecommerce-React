@@ -1,48 +1,38 @@
-  
-import React, {useState} from 'react'
-import ItemCount from "../ItemCount/ItemCount"
-import {Link} from 'react-router-dom'
-import useCartContext from '../../Context/CartContext'
-import './itemdetail.scss'
+import React, {useState, useEffect} from 'react';
+import {useParams} from "react-router-dom";
+//import {Products} from '../../listProducts';
+import ItemDetail from '../ItemDetail/ItemDetail' ;
+import { getFirestore } from '../../firebase'
 
-const ItemDetail = ({item}) => {
-    const stocks = 10
-    const initial = 1
-    const [add, setAdd] = useState(false)
-    const [quantity, setQuantity] = useState(1)
-    const { addItem } = useCartContext()
-
-    const itemQuantity = (count) => {
-        setQuantity(count)
-    }
-
-    const addToCart = () => {
-        addItem(item, quantity)
-        setAdd(true)
-    }
-
-
-    return (
+const ItemDetailContainer = () => {
+    const [loading, setLoading] = useState(false);
+    const [item, setItem] = useState([]);
+    
+    const {productId} = useParams();
+    
+    useEffect(() =>{
         
-        <div className="card-product-detail">
-            <div className="img-detail">
-                <img src={item.img} alt={item.id} width="350" />
-            </div>
-            <div className="info-detail">
-                <h3>{item.name}</h3>
-                <p className="card-description">{item.description}</p>
-                <p className="card-price">{item.price}</p>
-                <ItemCount stocks={stocks}
-                    stock={stocks}
-                    initial={initial}
-                    onAdd={itemQuantity}
-                />
-                <button className="btn" onClick={addToCart}>Agregar al Carrito</button>
-                {add ? <Link to= {'/cart'}><button className="btn">Comprar Ahora</button></Link> : null}
-            </div>
-        </div>
-           
-    )
-}
+        const db = getFirestore()
+        const getItem = db.collection("ItemCollection").doc(productId)
 
-export default ItemDetail
+        getItem.get().then((querySnapshot) => {
+            setItem({id:querySnapshot.id, ...querySnapshot.data()})
+            setLoading(false) 
+        })
+        .catch((e) => {console.log(e)})
+
+    }, [productId])
+
+    
+    return(
+        <>
+        
+        {loading ? "Cargando Información..." : <ItemDetail item={item} />}
+
+        </>
+        
+        )   
+    }
+    
+    
+export default ItemDetailContainer;
