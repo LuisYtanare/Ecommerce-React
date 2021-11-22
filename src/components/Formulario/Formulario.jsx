@@ -20,7 +20,6 @@ const Formulario = ({ createOrder }) => {
         setForm((state) => {
             return { ...state, [name]: value }
         })
-        console.log(form)
     }
 
     const finalizePurchase = () => {
@@ -34,8 +33,6 @@ const Formulario = ({ createOrder }) => {
         form.phone.length > 0 &&
         form.email === form.emailConfirmation
     )
-
-
     return (
         <div>
             <h2 className="title">Datos de Contacto</h2>

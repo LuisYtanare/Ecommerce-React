@@ -2,8 +2,6 @@ import React from "react"
 import { Link } from 'react-router-dom'
 import './item.scss'
 
-
-
 const Item = ({item: { id, name, description, img }}) => {
     return(
         <div className="card-product">
@@ -14,6 +12,5 @@ const Item = ({item: { id, name, description, img }}) => {
             
         </div>
     )
-    
 }
 export default Item

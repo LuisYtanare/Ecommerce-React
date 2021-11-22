@@ -14,19 +14,15 @@ const Cart = () => {
     const [showForm, setShowForm] = useState(false)
     const [orderId, setOrderId] = useState("")
     const [confirmation, setConfirmation] = useState(false)
-    
     const handleRemove = (i) => {
         removeItem(i.id)
     }
-    
     const handleFinalize = () =>{
         setShowForm(true)
     }
-
     const createOrder = (buyer) =>{
         const db = getFirestore()
         const orders = db.collection('order')
-        
         const newOrder = {
             buyer,
             products,
@@ -40,12 +36,7 @@ const Cart = () => {
                 cleanListCart()
             }
         ).catch((e) => {console.log(e)})
-
     }
-
-    console.log("Confirmacion",confirmation)
-    console.log("orderId",orderId)
-    
     if(products.length === 0 && orderId === ""){
         return (
             <div className="cart">
@@ -70,7 +61,6 @@ const Cart = () => {
             </div>
         )
     }
-        
     return(
         <section className="cart">
             <div className="heading cf">
@@ -80,7 +70,6 @@ const Cart = () => {
                 </Link>
             </div>
             <div className="shopping-cart">
-                
                 {products.map((item) => (
                     <div className="product">
                         <div className="product-image">
@@ -100,7 +89,6 @@ const Cart = () => {
                     </div>
                     )
                 )}
-
             </div>
             <div className="totals" >
                     <div class="totals-item">
@@ -118,11 +106,9 @@ const Cart = () => {
                     <div className="totals-item">
                         <button className ="checkout" onClick={handleFinalize}>Iniciar Compra</button>
                     </div>
-                    
             </div>
             {showForm ? <Formulario createOrder={createOrder}/> : null}
         </section>
-
     )
 }
 export default Cart;

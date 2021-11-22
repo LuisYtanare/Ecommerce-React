@@ -2,13 +2,13 @@ import firebase from "firebase/app"
 import "firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC2mHyvH9MyGxUqdWqEm53EFPDsIZk4ako",
-    authDomain: "coderhouse-gamingshops.firebaseapp.com",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
     projectId: "coderhouse-gamingshops",
-    storageBucket: "coderhouse-gamingshops.appspot.com",
-    messagingSenderId: "474736932899",
-    appId: "1:474736932899:web:2eb3cbb786ab974f0b9996",
-    measurementId: "G-2XZNPMY8Z9"
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
 const app = firebase.initializeApp(firebaseConfig)

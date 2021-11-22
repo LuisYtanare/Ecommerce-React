@@ -2,8 +2,6 @@ import React from "react"
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import './home.scss'
 
-
-
 const Home= ({greeting}) => {
     return(
         <section className="home">
@@ -13,9 +11,7 @@ const Home= ({greeting}) => {
             <span>encontraras los mejores productos para el gaming aqui!</span>
             </div>
             <ItemListContainer/>
-        </section>
-       
+        </section>  
     )
-    
 }
 export default Home

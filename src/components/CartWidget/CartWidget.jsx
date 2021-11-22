@@ -7,7 +7,6 @@ import {Link} from 'react-router-dom'
 
 const CartWidget = () => {
     const {cartWidgetCount, isInCart} = useCartContext()
-   
         return(
             <>
             {isInCart ? 
@@ -21,11 +20,6 @@ const CartWidget = () => {
             }
             </>
         )
-
-    
-
 }
-
-
 export default CartWidget;
 
