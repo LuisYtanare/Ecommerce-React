@@ -29,9 +29,16 @@ Se abre una pestaña del navegador en el puerto 3000:
 #### Sino copiar esta URL y pegarla en el navegador: `http://localhost:3000`
 
 
-## Proceso para realizadar una compra
+## Proceso para realizadar una compra.
 
-![gifreadme](https://user-images.githubusercontent.com/85045557/142895647-a73df7c4-3af5-41e4-b6db-5114115e9b38.gif)
+![giiiiiiiiiiit](https://user-images.githubusercontent.com/85045557/142897785-476538e1-2b04-4c26-be50-47b2f94be96a.gif)
+
+##Componentes
+-Barra de navegación.
+-Catálogo de compras y sus respectivos filtros.
+-Detalles de cada producto.
+-CartContex y CartWidget.
+-Formulario de Compra (envia datos a la firebase).
 
 ## Autor
 
