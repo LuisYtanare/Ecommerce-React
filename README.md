@@ -31,5 +31,5 @@ Se abre una pestaña del navegador en el puerto 3000:
 
 ## Proceso para realizadar una compra
 
-![image00]()
+![gifreadme](https://user-images.githubusercontent.com/85045557/142895647-a73df7c4-3af5-41e4-b6db-5114115e9b38.gif)
 
