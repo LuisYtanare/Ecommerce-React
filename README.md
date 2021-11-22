@@ -31,5 +31,5 @@ Se abre una pestaña del navegador en el puerto 3000:
 
 ## Proceso para realizadar una compra
 
-![image00](https://i.ibb.co/HYF4qnm/20211121-220401.gif)
+![image00](https://firebasestorage.googleapis.com/v0/b/coderhouse-gamingshops.appspot.com/o/20211121_220401.gif?alt=media&token=f80423c1-7b8d-465f-bf97-897c91dec877)
 
