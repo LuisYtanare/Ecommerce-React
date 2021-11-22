@@ -1,7 +1,6 @@
 # GamingShops
 
 
-
 ## Descripción
 
 Pagina de ventas de productos tecnologicos orientado a videojuegos con una lista de productos desde consolas, computador y componentes para la mejoria de la mejor calidad de el Gaming.
@@ -33,14 +32,18 @@ Se abre una pestaña del navegador en el puerto 3000:
 
 ![giiiiiiiiiiit](https://user-images.githubusercontent.com/85045557/142897785-476538e1-2b04-4c26-be50-47b2f94be96a.gif)
 
-##Componentes
--Barra de navegación.
--Catálogo de compras y sus respectivos filtros.
--Detalles de cada producto.
--CartContex y CartWidget.
--Formulario de Compra (envia datos a la firebase).
+
+
+## Componentes
+
+ - Catálogo de compras y sus respectivos filtros.
+ - Barra de navegación.
+ - Barra de navegación.
+ - Detalles de cada producto.
+ - CartContex y CartWidget.
+ - Formulario de Compra (envia datos a la firebase).
 
 ## Autor
 
-Luis Ytanare
+- Luis Ytanare
 
