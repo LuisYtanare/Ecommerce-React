@@ -11,7 +11,6 @@ const ItemCount = ({stocks,  initial, onAdd}) =>{
         if(count < stocks){
             setCount(count + 1)
             setSotck(stock - 1)
-            console.log(count)
         }
     }
     const decrease = () => { 

@@ -11,7 +11,6 @@ const NavBar = () => {
         {nombre: 'Nosotros', url: '/quienesSomos'}, 
         {nombre: 'Computadores', url: '/category/pc'}, 
         {nombre: 'Para Consolas', url: '/category/consolas'},
-        {nombre: 'Contáctenos', url: '/contacto'}
       ])
     
     return(

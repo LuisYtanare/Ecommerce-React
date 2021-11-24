@@ -35,7 +35,7 @@ const Cart = () => {
                 setConfirmation(true)
                 cleanListCart()
             }
-        ).catch((e) => {console.log(e)})
+        ).catch((e) => {})
     }
     if(products.length === 0 && orderId === ""){
         return (

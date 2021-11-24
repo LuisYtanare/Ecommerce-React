@@ -22,8 +22,7 @@ const Main = ({greeting}) => {
                 <Route exact path = "/item/:productId">
                     <ItemDetailContainer />
                  </Route>
-                <Route path="/contacto">
-                </Route>
+                 
                 <Route path="/cart">
                     <Cart/>
                 </Route>

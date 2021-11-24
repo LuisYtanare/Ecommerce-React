@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
             setItem({id:querySnapshot.id, ...querySnapshot.data()})
             setLoading(false) 
         })
-        .catch((e) => {console.log(e)})
+        .catch((e) => {})
     }, [productId])
     return(
         <>
