@@ -37,7 +37,7 @@ const ItemDetail = ({item}) => {
                     onAdd={itemQuantity}
                 />
                 <button className="btn" onClick={addToCart}>Agregar al Carrito</button>
-                {add ? <Link to= {'/'}><button className="btn">Seguir comprando</button></Link> : null}
+                {add ? <Link to= {'/cart'}><button className="btn">ir al Carrito</button></Link> : null}
             </div>
         </div>
            
