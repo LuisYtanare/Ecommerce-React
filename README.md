@@ -1,6 +1,7 @@
 # GamingShops
 
 
+
 ## Descripción
 
 Pagina de ventas de productos tecnologicos orientado a videojuegos con una lista de productos desde consolas, computador y componentes para la mejoria de la mejor calidad de el Gaming.
@@ -34,6 +35,7 @@ Se abre una pestaña del navegador en el puerto 3000:
 
 
 
+
 ## Componentes
 
  - Catálogo de compras y sus respectivos filtros.
@@ -43,7 +45,5 @@ Se abre una pestaña del navegador en el puerto 3000:
  - CartContex y CartWidget.
  - Formulario de Compra (envia datos a la firebase).
 
-## Autor
-
-- Luis Ytanare
-
+### Desde aqui puede ingresar a la App.
+-https://gaming-shoping.herokuapp.com/
